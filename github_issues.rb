@@ -2,7 +2,7 @@ require 'octokit'
 require 'csv'
 require 'pry'
 
-client = Octokit::Client.new(login: ENV['GH_USERNAME'], password: ENV['GH_PASSWORD'])
+client = Octokit::Client.new(login: ENV['GITHUB_USERNAME'], password: ENV['GITHUB_PASSWORD'])
 
 issue_status = ARGV[0]
 repo = ARGV[1]
